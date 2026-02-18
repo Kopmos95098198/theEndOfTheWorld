@@ -1,21 +1,32 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
-    string letters[5] = 
-        {"a", "e", "i", "o", "u"};
-    
-    string enterSentence;
-    getline(cin, enterSentence);
+    int x, y, z;
 
-    int getArraySize = sizeof(letters) / sizeof(letters[0]);
-    cout << getArraySize;
+    cin >> x >> y >> z;
     
-        
+    if (x == y && y == z) {
+
+        cout << 10000 + x * 1000;
+
+    } else if (x == y) {
+
+        cout << 1000 + x * 100;
+
+    } else if (y == z) {
+
+        cout << 1000 + y * 100; 
+
+    } else if (x == z) {
+
+        cout << 1000 + z * 100;
+
+    } else {
+        cout << max({ x, y, z}) * 100;
+    }
 
     
-
-    return 0;
+    return 0; 
 
 }
