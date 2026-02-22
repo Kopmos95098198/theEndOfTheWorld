@@ -3,9 +3,13 @@ using namespace std;
 
 int main() {
    
-    int x;
+    int x, y;
 
     cin >> x;
+    cin >> y;
+
+    cout << x / y;
+    
     
 
 
